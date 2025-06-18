@@ -2,7 +2,7 @@
 	(version 20250114)
 	(generator "eeschema")
 	(generator_version "9.0")
-	(uuid "97f5edf8-84ca-4480-ad7a-b22107995f1d")
+	(uuid "124ca746-315a-476a-85fe-99bb4faa8829")
 	(paper "A4")
 	(lib_symbols
 		(symbol "Connector:TestPoint"
@@ -2942,8 +2942,16 @@
 		(uuid "2617958b-9b4e-406f-9774-e259355fae34")
 	)
 	(no_connect
+		(at 99.06 125.73)
+		(uuid "2f3d295d-4bf9-4e2a-a37d-40a379bc77e9")
+	)
+	(no_connect
 		(at 68.58 120.65)
 		(uuid "3322490b-2286-4121-ad46-e02970f6eeda")
+	)
+	(no_connect
+		(at 68.58 110.49)
+		(uuid "33901b1d-cd96-4a98-865d-ee0fda365b38")
 	)
 	(no_connect
 		(at 68.58 115.57)
@@ -2968,6 +2976,10 @@
 	(no_connect
 		(at 255.27 48.26)
 		(uuid "c43ddfba-428e-40fb-ac55-5bf37f56b8ec")
+	)
+	(no_connect
+		(at 99.06 123.19)
+		(uuid "d487d0cf-28e9-4e85-9b16-402d47d17eef")
 	)
 	(no_connect
 		(at 68.58 107.95)
@@ -3883,50 +3895,6 @@
 			)
 		)
 	)
-	(global_label "RXD_TTL"
-		(shape input)
-		(at 99.06 125.73 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "482c1eea-560d-4680-94ef-dbe46c849549")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 109.0647 125.6506 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "TXD_TTL"
-		(shape output)
-		(at 99.06 123.19 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "6022aad5-5d9f-4675-a5b7-9417188f991d")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 108.7623 123.1106 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "HB_nFAULT"
 		(shape output)
 		(at 204.47 41.91 180)
@@ -4028,28 +3996,6 @@
 		(uuid "93bbd992-cb63-4c48-8873-6f64558b5f2d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 216.3621 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "TXEN_TTL"
-		(shape output)
-		(at 68.58 110.49 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "b286d2ef-ee68-4898-a9f2-e5764fa63043")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 57.0073 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5175,7 +5121,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:CP_Elec_8x10"
 			(at 185.42 62.23 0)
 			(effects
 				(font
@@ -5194,6 +5140,15 @@
 			)
 		)
 		(property "Description" "Polarized capacitor, small symbol"
+			(at 185.42 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "REF" "EEH-ZA1V101P"
 			(at 185.42 62.23 0)
 			(effects
 				(font

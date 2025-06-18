@@ -2,7 +2,7 @@
 	(version 20250114)
 	(generator "eeschema")
 	(generator_version "9.0")
-	(uuid "60b803e4-5228-4a24-9ff3-fd2a4ab89041")
+	(uuid "93b9476c-f035-4e2f-8a93-d61d397d7d7a")
 	(paper "A4")
 	(lib_symbols
 		(symbol "Connector:TestPoint"
@@ -2243,12 +2243,6 @@
 		(uuid "5ac063f3-af54-48bb-a338-6b4aaabf444a")
 	)
 	(junction
-		(at 44.45 95.25)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7747923b-1e6c-471a-88b4-530f53549d52")
-	)
-	(junction
 		(at 55.88 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2452,7 +2446,7 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 95.25) (xy 27.94 95.25)
+			(xy 26.67 95.25) (xy 36.83 95.25)
 		)
 		(stroke
 			(width 0)
@@ -2590,6 +2584,16 @@
 		)
 		(uuid "415736b0-11a8-4856-8a9c-1d1ef3100f49")
 	)
+	(wire
+		(pts
+			(xy 110.49 39.37) (xy 116.84 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4162a0ba-eb35-45cb-be2e-75c225c09e72")
+	)
 	(polyline
 		(pts
 			(xy 181.61 130.175) (xy 21.59 130.175)
@@ -2659,16 +2663,6 @@
 			(type default)
 		)
 		(uuid "4a34b254-ff6e-4d3a-90de-50cb5ef5e418")
-	)
-	(wire
-		(pts
-			(xy 110.49 39.37) (xy 116.84 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4dc87d3a-4ae2-4363-abaf-d461975f2dae")
 	)
 	(wire
 		(pts
@@ -2952,7 +2946,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 95.25) (xy 44.45 95.25)
+			(xy 36.83 95.25) (xy 52.07 95.25)
 		)
 		(stroke
 			(width 0)
@@ -3019,16 +3013,6 @@
 			(type default)
 		)
 		(uuid "c0d017b8-8191-4a19-9be7-a0e3eb99f896")
-	)
-	(wire
-		(pts
-			(xy 33.02 95.25) (xy 36.83 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c9917b8d-f0e6-4f92-a5e0-cc21c42d43ff")
 	)
 	(polyline
 		(pts
@@ -3189,16 +3173,6 @@
 			(type default)
 		)
 		(uuid "f26d0f75-0f4e-491e-888a-38ac23ed4e4d")
-	)
-	(wire
-		(pts
-			(xy 44.45 95.25) (xy 52.07 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f44afc87-c64e-42bc-b301-d22de6fc3214")
 	)
 	(wire
 		(pts
@@ -4835,7 +4809,7 @@
 				(hide yes)
 			)
 		)
-		(property "REF" "NLCV25T-220K-PF"
+		(property "REF" "NLCV25T-220K-EFD"
 			(at 127 101.6 90)
 			(effects
 				(font
@@ -6519,72 +6493,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 44.45 95.25 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f0896779-a1a4-4230-87bc-f9c69030e376")
-		(property "Reference" "#FLG05"
-			(at 44.45 93.345 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 44.45 91.1169 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 44.45 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 44.45 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 44.45 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "df861906-58db-4576-ac4b-1974178e67e5")
-		)
-		(instances
-			(project "linear_act_controller"
-				(path "/a7f12679-28d2-4dcb-a620-9ebf42b92b51/9aa0f8d5-db02-4fb8-86c3-5f9e7fcbafc5"
-					(reference "#FLG05")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:D_Small")
 		(at 35.56 36.83 180)
 		(unit 1)
@@ -6601,7 +6509,7 @@
 				)
 			)
 		)
-		(property "Value" "1N4007"
+		(property "Value" "SE30AFBHM3/6A"
 			(at 35.56 39.7256 0)
 			(effects
 				(font
@@ -6609,7 +6517,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_SMA_Handsoldering"
 			(at 35.56 36.83 90)
 			(effects
 				(font
@@ -6636,7 +6544,7 @@
 				(hide yes)
 			)
 		)
-		(property "REF" "SM4007PL"
+		(property "REF" "SE30AFBHM3/6A"
 			(at 35.56 36.83 0)
 			(effects
 				(font
@@ -6758,118 +6666,6 @@
 			(project "linear_act_controller"
 				(path "/a7f12679-28d2-4dcb-a620-9ebf42b92b51/9aa0f8d5-db02-4fb8-86c3-5f9e7fcbafc5"
 					(reference "#FLG09")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_Small")
-		(at 30.48 95.25 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f6d12087-9fd1-4f14-ae52-427800eed40a")
-		(property "Reference" "D1"
-			(at 30.48 100.457 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1N4007"
-			(at 30.48 98.1456 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 30.48 95.25 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 30.48 95.25 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Diode, small symbol"
-			(at 30.48 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "REF" "SM4007PL"
-			(at 30.48 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "RS" ""
-			(at 30.48 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB" "C64898"
-			(at 30.48 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 30.48 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 30.48 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b2913f85-b036-4472-933e-25799843ad27")
-		)
-		(pin "2"
-			(uuid "5ab85f31-376e-40e2-ac6d-75c016e8d10a")
-		)
-		(instances
-			(project "linear_act_controller"
-				(path "/a7f12679-28d2-4dcb-a620-9ebf42b92b51/9aa0f8d5-db02-4fb8-86c3-5f9e7fcbafc5"
-					(reference "D1")
 					(unit 1)
 				)
 			)
