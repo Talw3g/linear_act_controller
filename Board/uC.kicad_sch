@@ -3718,7 +3718,7 @@
 	)
 	(global_label "HB_ENBL"
 		(shape output)
-		(at 90.17 99.06 0)
+		(at 90.17 101.6 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3728,7 +3728,7 @@
 		)
 		(uuid "0c65270b-b5ea-4cb4-8d97-f6d5b3219ca5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 101.5009 99.06 0)
+			(at 101.5009 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4092,7 +4092,7 @@
 	)
 	(global_label "HB_DIR"
 		(shape output)
-		(at 90.17 101.6 0)
+		(at 90.17 99.06 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4102,7 +4102,7 @@
 		)
 		(uuid "f095db72-8cc9-40c3-8a05-6891ff90d532")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 99.8681 101.6 0)
+			(at 99.8681 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
