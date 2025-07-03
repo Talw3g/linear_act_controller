@@ -4121,7 +4121,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "017c606a-a0d6-458d-94f3-cc8ff871530b")
-		(property "Reference" "C19"
+		(property "Reference" "C6"
 			(at 185.42 58.674 0)
 			(effects
 				(font
@@ -4175,7 +4175,7 @@
 		(instances
 			(project "linear_act_controller"
 				(path "/a7f12679-28d2-4dcb-a620-9ebf42b92b51/db8eb4c5-25c6-41a9-b739-ec315f7b77a5"
-					(reference "C19")
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -4190,7 +4190,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "03e339a0-dabb-45c0-95aa-9533025ffc18")
-		(property "Reference" "C26"
+		(property "Reference" "C2"
 			(at 172.72 65.024 0)
 			(effects
 				(font
@@ -4244,7 +4244,7 @@
 		(instances
 			(project "linear_act_controller"
 				(path "/a7f12679-28d2-4dcb-a620-9ebf42b92b51/db8eb4c5-25c6-41a9-b739-ec315f7b77a5"
-					(reference "C26")
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -4260,7 +4260,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0bd45ecd-d698-4235-89d1-6fb204694fb0")
-		(property "Reference" "R20"
+		(property "Reference" "R18"
 			(at 218.44 35.56 90)
 			(effects
 				(font
@@ -4312,7 +4312,7 @@
 		(instances
 			(project "linear_act_controller"
 				(path "/a7f12679-28d2-4dcb-a620-9ebf42b92b51/db8eb4c5-25c6-41a9-b739-ec315f7b77a5"
-					(reference "R20")
+					(reference "R18")
 					(unit 1)
 				)
 			)
@@ -4327,7 +4327,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "12275476-558a-40cc-afd2-0b6db2f4b2ec")
-		(property "Reference" "C25"
+		(property "Reference" "C10"
 			(at 241.554 63.246 0)
 			(effects
 				(font
@@ -4381,7 +4381,7 @@
 		(instances
 			(project "linear_act_controller"
 				(path "/a7f12679-28d2-4dcb-a620-9ebf42b92b51/db8eb4c5-25c6-41a9-b739-ec315f7b77a5"
-					(reference "C25")
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -4527,7 +4527,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "39865df2-940a-47a7-b1f7-4c928bda41af")
-		(property "Reference" "FB3"
+		(property "Reference" "FB2"
 			(at 97.7138 49.8534 0)
 			(effects
 				(font
@@ -4581,7 +4581,7 @@
 		(instances
 			(project "linear_act_controller"
 				(path "/a7f12679-28d2-4dcb-a620-9ebf42b92b51/db8eb4c5-25c6-41a9-b739-ec315f7b77a5"
-					(reference "FB3")
+					(reference "FB2")
 					(unit 1)
 				)
 			)
@@ -4728,7 +4728,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4e814271-037d-45d6-b2dd-1d619d398be4")
-		(property "Reference" "U3"
+		(property "Reference" "U1"
 			(at 251.46 22.5255 0)
 			(effects
 				(font
@@ -4840,7 +4840,7 @@
 		(instances
 			(project ""
 				(path "/a7f12679-28d2-4dcb-a620-9ebf42b92b51/db8eb4c5-25c6-41a9-b739-ec315f7b77a5"
-					(reference "U3")
+					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -4855,7 +4855,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5625528a-703a-4632-bf3d-9fa6237238ab")
-		(property "Reference" "U4"
+		(property "Reference" "U3"
 			(at 72.39 128.27 0)
 			(effects
 				(font
@@ -5000,7 +5000,7 @@
 		(instances
 			(project "linear_act_controller"
 				(path "/a7f12679-28d2-4dcb-a620-9ebf42b92b51/db8eb4c5-25c6-41a9-b739-ec315f7b77a5"
-					(reference "U4")
+					(reference "U3")
 					(unit 1)
 				)
 			)
@@ -5080,7 +5080,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "59356a33-400a-4ab7-9e3f-6e989b636615")
-		(property "Reference" "C22"
+		(property "Reference" "C4"
 			(at 150.241 59.2017 0)
 			(effects
 				(font
@@ -5143,7 +5143,7 @@
 		(instances
 			(project ""
 				(path "/a7f12679-28d2-4dcb-a620-9ebf42b92b51/db8eb4c5-25c6-41a9-b739-ec315f7b77a5"
-					(reference "C22")
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -5158,7 +5158,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "60fb0a6e-ac21-4616-8bef-bfd227648e12")
-		(property "Reference" "C20"
+		(property "Reference" "C5"
 			(at 208.28 58.42 0)
 			(effects
 				(font
@@ -5212,7 +5212,7 @@
 		(instances
 			(project "linear_act_controller"
 				(path "/a7f12679-28d2-4dcb-a620-9ebf42b92b51/db8eb4c5-25c6-41a9-b739-ec315f7b77a5"
-					(reference "C20")
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -5358,7 +5358,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "68b4fbe1-d235-4356-bd95-5d81504c1645")
-		(property "Reference" "C27"
+		(property "Reference" "C17"
 			(at 97.5868 63.6016 0)
 			(effects
 				(font
@@ -5412,7 +5412,7 @@
 		(instances
 			(project "linear_act_controller"
 				(path "/a7f12679-28d2-4dcb-a620-9ebf42b92b51/db8eb4c5-25c6-41a9-b739-ec315f7b77a5"
-					(reference "C27")
+					(reference "C17")
 					(unit 1)
 				)
 			)
@@ -5428,7 +5428,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6ac1ecb2-68e4-431f-a661-350445f5378e")
-		(property "Reference" "R22"
+		(property "Reference" "R11"
 			(at 40.8686 77.8315 0)
 			(effects
 				(font
@@ -5482,7 +5482,7 @@
 		(instances
 			(project "linear_act_controller"
 				(path "/a7f12679-28d2-4dcb-a620-9ebf42b92b51/db8eb4c5-25c6-41a9-b739-ec315f7b77a5"
-					(reference "R22")
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -5562,7 +5562,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8d20715f-c147-4e08-8f6e-df71c393fcd5")
-		(property "Reference" "C23"
+		(property "Reference" "C1"
 			(at 196.85 63.246 0)
 			(effects
 				(font
@@ -5616,7 +5616,7 @@
 		(instances
 			(project "linear_act_controller"
 				(path "/a7f12679-28d2-4dcb-a620-9ebf42b92b51/db8eb4c5-25c6-41a9-b739-ec315f7b77a5"
-					(reference "C23")
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -5762,7 +5762,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9c9b4300-9c09-4c18-8141-f8391f202626")
-		(property "Reference" "FB2"
+		(property "Reference" "FB1"
 			(at 64.6938 33.3434 0)
 			(effects
 				(font
@@ -5816,7 +5816,7 @@
 		(instances
 			(project "linear_act_controller"
 				(path "/a7f12679-28d2-4dcb-a620-9ebf42b92b51/db8eb4c5-25c6-41a9-b739-ec315f7b77a5"
-					(reference "FB2")
+					(reference "FB1")
 					(unit 1)
 				)
 			)
@@ -5896,7 +5896,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a7c31a16-8260-428c-a12c-9ab20a8573e4")
-		(property "Reference" "C21"
+		(property "Reference" "C11"
 			(at 232.41 58.42 0)
 			(effects
 				(font
@@ -5950,7 +5950,7 @@
 		(instances
 			(project "linear_act_controller"
 				(path "/a7f12679-28d2-4dcb-a620-9ebf42b92b51/db8eb4c5-25c6-41a9-b739-ec315f7b77a5"
-					(reference "C21")
+					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -5965,7 +5965,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a9dd6782-f1ca-477c-8e7d-fee5da5fea5f")
-		(property "Reference" "C24"
+		(property "Reference" "C7"
 			(at 219.71 62.992 0)
 			(effects
 				(font
@@ -6019,7 +6019,7 @@
 		(instances
 			(project "linear_act_controller"
 				(path "/a7f12679-28d2-4dcb-a620-9ebf42b92b51/db8eb4c5-25c6-41a9-b739-ec315f7b77a5"
-					(reference "C24")
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -6034,7 +6034,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ab1510b5-df13-4697-8083-e71943ed3ebf")
-		(property "Reference" "R21"
+		(property "Reference" "R6"
 			(at 269.4686 58.5216 0)
 			(effects
 				(font
@@ -6088,7 +6088,7 @@
 		(instances
 			(project "linear_act_controller"
 				(path "/a7f12679-28d2-4dcb-a620-9ebf42b92b51/db8eb4c5-25c6-41a9-b739-ec315f7b77a5"
-					(reference "R21")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -6238,7 +6238,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bda81a97-e0bc-4ca1-8aab-c5847a3840c2")
-		(property "Reference" "TP2"
+		(property "Reference" "TP1"
 			(at 84.836 115.57 0)
 			(effects
 				(font
@@ -6289,7 +6289,7 @@
 		(instances
 			(project "linear_act_controller"
 				(path "/a7f12679-28d2-4dcb-a620-9ebf42b92b51/db8eb4c5-25c6-41a9-b739-ec315f7b77a5"
-					(reference "TP2")
+					(reference "TP1")
 					(unit 1)
 				)
 			)
@@ -6369,7 +6369,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c18d8cb8-f119-4c69-87ec-e251d94034d4")
-		(property "Reference" "C17"
+		(property "Reference" "C3"
 			(at 226.314 49.2506 0)
 			(effects
 				(font
@@ -6423,7 +6423,7 @@
 		(instances
 			(project "linear_act_controller"
 				(path "/a7f12679-28d2-4dcb-a620-9ebf42b92b51/db8eb4c5-25c6-41a9-b739-ec315f7b77a5"
-					(reference "C17")
+					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -6438,7 +6438,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c626dec5-21ea-402b-b225-fc939a135bdd")
-		(property "Reference" "C16"
+		(property "Reference" "C12"
 			(at 82.3468 42.0116 0)
 			(effects
 				(font
@@ -6492,7 +6492,7 @@
 		(instances
 			(project "linear_act_controller"
 				(path "/a7f12679-28d2-4dcb-a620-9ebf42b92b51/db8eb4c5-25c6-41a9-b739-ec315f7b77a5"
-					(reference "C16")
+					(reference "C12")
 					(unit 1)
 				)
 			)
@@ -6507,7 +6507,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "cdfdcaa8-2c08-4143-b9a6-2b82f6b05d85")
-		(property "Reference" "R18"
+		(property "Reference" "R21"
 			(at 185.928 33.782 90)
 			(effects
 				(font
@@ -6561,7 +6561,7 @@
 		(instances
 			(project "linear_act_controller"
 				(path "/a7f12679-28d2-4dcb-a620-9ebf42b92b51/db8eb4c5-25c6-41a9-b739-ec315f7b77a5"
-					(reference "R18")
+					(reference "R21")
 					(unit 1)
 				)
 			)
@@ -6576,7 +6576,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d1afa234-f584-427e-a451-9f0ef9c587d0")
-		(property "Reference" "C14"
+		(property "Reference" "C24"
 			(at 171.704 39.0906 0)
 			(effects
 				(font
@@ -6630,7 +6630,7 @@
 		(instances
 			(project "linear_act_controller"
 				(path "/a7f12679-28d2-4dcb-a620-9ebf42b92b51/db8eb4c5-25c6-41a9-b739-ec315f7b77a5"
-					(reference "C14")
+					(reference "C24")
 					(unit 1)
 				)
 			)
@@ -6645,7 +6645,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ddf0cb2e-7026-45eb-a7bf-5175b85b14d2")
-		(property "Reference" "C15"
+		(property "Reference" "C13"
 			(at 72.1868 42.0116 0)
 			(effects
 				(font
@@ -6699,7 +6699,7 @@
 		(instances
 			(project "linear_act_controller"
 				(path "/a7f12679-28d2-4dcb-a620-9ebf42b92b51/db8eb4c5-25c6-41a9-b739-ec315f7b77a5"
-					(reference "C15")
+					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -6715,7 +6715,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e99da6a2-c20b-40df-acec-eb7378623e79")
-		(property "Reference" "R23"
+		(property "Reference" "R7"
 			(at 39.5986 91.8015 0)
 			(effects
 				(font
@@ -6769,7 +6769,7 @@
 		(instances
 			(project "linear_act_controller"
 				(path "/a7f12679-28d2-4dcb-a620-9ebf42b92b51/db8eb4c5-25c6-41a9-b739-ec315f7b77a5"
-					(reference "R23")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -6849,7 +6849,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ffb1540f-e2f3-4bdd-81a9-bbe8138096e0")
-		(property "Reference" "C18"
+		(property "Reference" "C8"
 			(at 160.02 57.15 0)
 			(effects
 				(font
@@ -6903,7 +6903,7 @@
 		(instances
 			(project "linear_act_controller"
 				(path "/a7f12679-28d2-4dcb-a620-9ebf42b92b51/db8eb4c5-25c6-41a9-b739-ec315f7b77a5"
-					(reference "C18")
+					(reference "C8")
 					(unit 1)
 				)
 			)
