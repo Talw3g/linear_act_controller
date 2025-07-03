@@ -9,6 +9,7 @@ _autosave*
 *.xml
 *.swp
 *.lck
+*.step
 build
 *-backups
 firmware
