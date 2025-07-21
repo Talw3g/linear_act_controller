@@ -4166,6 +4166,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pin" ""
+			(at 191.77 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "35e0116d-9a5f-403e-b8b8-3efbc103ee48")
 		)
@@ -4227,6 +4236,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 179.07 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pin" ""
 			(at 179.07 64.77 0)
 			(effects
 				(font
@@ -4303,6 +4321,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pin" ""
+			(at 218.44 40.64 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c9dd8c47-983e-4eab-9387-13497098644a")
 		)
@@ -4364,6 +4391,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 247.65 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pin" ""
 			(at 247.65 63.5 0)
 			(effects
 				(font
@@ -4545,7 +4581,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 93.472 50.8 90)
 			(effects
 				(font
@@ -4564,6 +4600,15 @@
 			)
 		)
 		(property "Description" "Ferrite bead, small symbol"
+			(at 95.25 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pin" ""
 			(at 95.25 50.8 0)
 			(effects
 				(font
@@ -4774,6 +4819,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pin" ""
+			(at 251.46 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "10"
 			(uuid "0829f8d3-7569-4e81-957a-136087137683")
 		)
@@ -4893,6 +4947,15 @@
 			)
 		)
 		(property "Description" "STMicroelectronics Arm Cortex-M0 MCU, 32KB flash, 4KB RAM, 48 MHz, 2.4-3.6V, 25 GPIO, LQFP32"
+			(at 62.23 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pin" ""
 			(at 62.23 104.14 0)
 			(effects
 				(font
@@ -5134,6 +5197,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pin" ""
+			(at 152.4 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "4a0cbf8d-3057-4121-b4a3-96481b360f90")
 		)
@@ -5195,6 +5267,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 214.63 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pin" ""
 			(at 214.63 58.42 0)
 			(effects
 				(font
@@ -5403,6 +5484,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pin" ""
+			(at 95.25 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d9690a7b-3317-49d7-9227-2926d0006619")
 		)
@@ -5465,6 +5555,15 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 39.37 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pin" ""
 			(at 39.37 78.74 0)
 			(effects
 				(font
@@ -5599,6 +5698,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 203.2 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pin" ""
 			(at 203.2 63.5 0)
 			(effects
 				(font
@@ -5780,7 +5888,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 60.452 34.29 90)
 			(effects
 				(font
@@ -5799,6 +5907,15 @@
 			)
 		)
 		(property "Description" "Ferrite bead, small symbol"
+			(at 62.23 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pin" ""
 			(at 62.23 34.29 0)
 			(effects
 				(font
@@ -5941,6 +6058,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pin" ""
+			(at 229.87 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f3ed16c7-e107-4743-a07e-843c2909a3ed")
 		)
@@ -6002,6 +6128,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 226.06 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pin" ""
 			(at 226.06 63.5 0)
 			(effects
 				(font
@@ -6079,6 +6214,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pin" ""
+			(at 267.97 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c560c8fd-9d21-465d-8191-8f60ff814a28")
 		)
@@ -6141,6 +6285,15 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 205.74 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pin" ""
 			(at 205.74 36.83 0)
 			(effects
 				(font
@@ -6283,6 +6436,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pin" ""
+			(at 86.36 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ebd5556e-cbfa-41c6-baa6-dc64b91343cb")
 		)
@@ -6414,6 +6576,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pin" ""
+			(at 233.68 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c9b49eae-574f-49b6-a561-bae8300f3ca1")
 		)
@@ -6475,6 +6646,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 80.01 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pin" ""
 			(at 80.01 43.18 0)
 			(effects
 				(font
@@ -6552,6 +6732,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pin" ""
+			(at 184.15 35.56 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "934f7118-edfe-41e6-a3dd-d7236d13a5f4")
 		)
@@ -6613,6 +6802,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 179.07 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pin" ""
 			(at 179.07 40.64 0)
 			(effects
 				(font
@@ -6690,6 +6888,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pin" ""
+			(at 69.85 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "22a37875-bdff-4b9e-a328-5c399dd7dbce")
 		)
@@ -6752,6 +6959,15 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 38.1 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pin" ""
 			(at 38.1 92.71 0)
 			(effects
 				(font
@@ -6886,6 +7102,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 166.37 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pin" ""
 			(at 166.37 57.15 0)
 			(effects
 				(font

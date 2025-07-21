@@ -5,6 +5,168 @@
 	(uuid "93b9476c-f035-4e2f-8a93-d61d397d7d7a")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Device:C_Polarized_Small"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.254 1.778 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Polarized_Small"
+				(at 0.254 -2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Polarized capacitor, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "CP_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_Polarized_Small_0_1"
+				(rectangle
+					(start -1.524 0.6858)
+					(end 1.524 0.3048)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.524 -0.3048)
+					(end 1.524 -0.6858)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 1.524) (xy -0.762 1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.016 1.27) (xy -1.016 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_Polarized_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 1.8542)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 1.8542)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C_Small"
 			(pin_numbers
 				(hide yes)
@@ -2996,7 +3158,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 48.26) (xy 168.91 43.18)
+			(xy 168.91 50.8) (xy 168.91 43.18)
 		)
 		(stroke
 			(width 0)
@@ -3306,7 +3468,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 53.34) (xy 168.91 62.23)
+			(xy 168.91 55.88) (xy 168.91 62.23)
 		)
 		(stroke
 			(width 0)
@@ -3422,7 +3584,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 156.21 103.378 90)
 			(effects
 				(font
@@ -3449,6 +3611,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pin" ""
+			(at 156.21 101.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "992a4f3e-17db-4f1b-b24b-fc02617a91bf")
 		)
@@ -3465,8 +3636,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 168.91 50.8 0)
+		(lib_id "Device:C_Polarized_Small")
+		(at 168.91 53.34 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3474,7 +3645,7 @@
 		(dnp no)
 		(uuid "0029c67d-71bf-450f-bf0e-8c8b06001975")
 		(property "Reference" "C9"
-			(at 171.2468 49.6316 0)
+			(at 171.2468 52.1716 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3483,7 +3654,7 @@
 			)
 		)
 		(property "Value" "22u/35V"
-			(at 171.2468 51.943 0)
+			(at 171.2468 54.483 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3491,8 +3662,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 168.91 50.8 0)
+		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x5.8"
+			(at 168.91 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3501,7 +3672,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 168.91 50.8 0)
+			(at 168.91 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3509,8 +3680,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 168.91 50.8 0)
+		(property "Description" "Polarized capacitor, small symbol"
+			(at 168.91 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3518,8 +3689,8 @@
 				(hide yes)
 			)
 		)
-		(property "REF" ""
-			(at 168.91 50.8 0)
+		(property "REF" "EEH-ZA1V330P"
+			(at 168.91 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3528,7 +3699,16 @@
 			)
 		)
 		(property "JLCPCB" ""
-			(at 168.91 50.8 0)
+			(at 168.91 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pin" ""
+			(at 168.91 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3639,6 +3819,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pin" ""
+			(at 127 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "7cc4ad00-bb9b-46ec-928b-6269958c889a")
 		)
@@ -3700,6 +3889,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 116.84 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pin" ""
 			(at 116.84 96.52 0)
 			(effects
 				(font
@@ -3787,6 +3985,15 @@
 			)
 		)
 		(property "JLCPCB" "C385986"
+			(at 52.07 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pin" ""
 			(at 52.07 99.06 0)
 			(effects
 				(font
@@ -3986,6 +4193,15 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 66.04 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pin" ""
 			(at 66.04 101.6 0)
 			(effects
 				(font
@@ -4194,6 +4410,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pin" ""
+			(at 111.76 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f3ee4778-dc17-4e46-b784-0f3a81544b6f")
 		)
@@ -4329,6 +4554,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pin" ""
+			(at 113.03 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "06cff1f4-4b83-4dd8-870e-4c86d4545184")
 		)
@@ -4428,7 +4662,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22u/35V"
+		(property "Value" "10u/16V"
 			(at 134.4168 114.173 0)
 			(effects
 				(font
@@ -4474,6 +4708,15 @@
 			)
 		)
 		(property "JLCPCB" "C268007"
+			(at 132.08 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pin" ""
 			(at 132.08 113.03 0)
 			(effects
 				(font
@@ -4543,6 +4786,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 168.91 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pin" ""
 			(at 168.91 106.68 0)
 			(effects
 				(font
@@ -4629,6 +4881,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pin" ""
+			(at 43.18 40.64 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "20c9a110-8f6b-4eb4-816a-7ea0d580291c")
 		)
@@ -4691,6 +4952,15 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 104.14 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pin" ""
 			(at 104.14 113.03 0)
 			(effects
 				(font
@@ -4786,6 +5056,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pin" ""
+			(at 36.83 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "aeb27fe5-46e7-4dd2-b4db-daad541c35f3")
 		)
@@ -4848,6 +5127,15 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 157.48 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pin" ""
 			(at 157.48 58.42 0)
 			(effects
 				(font
@@ -5026,7 +5314,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_1008_2520Metric"
+		(property "Footprint" "Inductor_SMD:L_1008_2520Metric_Pad1.43x2.20mm_HandSolder"
 			(at 127 101.6 0)
 			(effects
 				(font
@@ -5081,6 +5369,15 @@
 			)
 		)
 		(property "JLCPCB" "C136260"
+			(at 127 101.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pin" ""
 			(at 127 101.6 90)
 			(effects
 				(font
@@ -5224,6 +5521,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pin" ""
+			(at 130.81 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "a4e9da1a-fd74-4bb6-8bb9-71bc5c2ebab8")
 		)
@@ -5315,6 +5621,15 @@
 			)
 		)
 		(property "JLCPCB" ""
+			(at 90.17 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pin" ""
 			(at 90.17 49.53 0)
 			(effects
 				(font
@@ -5557,6 +5872,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pin" ""
+			(at 151.13 43.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "e85aa2b8-a08b-4e4f-8b73-ff646c4571a4")
 		)
@@ -5778,6 +6102,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pin" ""
+			(at 73.66 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "233fada0-7a92-4304-9598-a05e18992170")
 		)
@@ -5811,7 +6144,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1N5819WS"
+		(property "Value" "B5819WS-TP"
 			(at 118.5672 114.173 90)
 			(effects
 				(font
@@ -5847,7 +6180,16 @@
 				(hide yes)
 			)
 		)
-		(property "REF" "1N5819WS"
+		(property "REF" "B5819WS-TP"
+			(at 116.84 113.03 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pin" ""
 			(at 116.84 113.03 90)
 			(effects
 				(font
@@ -5916,6 +6258,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 87.63 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pin" ""
 			(at 87.63 99.06 0)
 			(effects
 				(font
@@ -6064,6 +6415,15 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 157.48 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pin" ""
 			(at 157.48 48.26 0)
 			(effects
 				(font
@@ -6338,6 +6698,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pin" ""
+			(at 113.03 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f8915240-66b2-45b2-a2df-e5dc0454d643")
 		)
@@ -6425,6 +6794,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pin" ""
+			(at 66.04 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9975fbf7-7e5d-44ea-b348-b82d927a3b73")
 		)
@@ -6487,6 +6865,15 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 161.29 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pin" ""
 			(at 161.29 101.6 0)
 			(effects
 				(font
@@ -6712,6 +7099,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pin" ""
+			(at 144.78 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "aa15d0f5-8edc-4813-9aef-c7e3a198f38c")
 		)
@@ -6816,6 +7212,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 57.15 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pin" ""
 			(at 57.15 40.64 0)
 			(effects
 				(font
@@ -6970,6 +7375,15 @@
 			)
 		)
 		(property "JLCPCB" ""
+			(at 81.28 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pin" ""
 			(at 81.28 54.61 0)
 			(effects
 				(font
