@@ -33,12 +33,16 @@ fn main() -> ! {
     let mut rcc = p.RCC.configure().sysclk(48.mhz()).freeze(&mut p.FLASH);
 
     let gpioa = p.GPIOA.split(&mut rcc);
-    let _gpiob = p.GPIOB.split(&mut rcc);
+    let gpiob = p.GPIOB.split(&mut rcc);
     let _gpiof = p.GPIOF.split(&mut rcc);
 
     // -- GPIOs --
     let mut led = cortex_m::interrupt::free(|cs| gpioa.pa13.into_push_pull_output(cs));
+    let mut hb_dir = cortex_m::interrupt::free(|cs| gpioa.pa6.into_push_pull_output(cs));
+    let mut hb_nsleep = cortex_m::interrupt::free(|cs| gpiob.pb0.into_push_pull_output(cs));
     led.set_high().ok();
+    hb_dir.set_high().ok();
+    hb_nsleep.set_high().ok();
 
     // -- DEBUG SERIAL LINK --
     // configure debug serial link
@@ -57,13 +61,14 @@ fn main() -> ! {
     // -- PWMs --
     let pwm_pin = cortex_m::interrupt::free(|cs| gpioa.pa7.into_alternate_af1(cs));
     let mut pwm = pwm::tim3(p.TIM3, pwm_pin, &mut rcc, 10.khz());
-
+    //
     // enable PWM output
     pwm.enable();
 
     loop {
         // toggle led
         led.toggle().ok();
+        hb_dir.toggle().ok();
 
         // measure voltage on ADC
         let ctrl_pot: u16 = adc.read_abs_mv(&mut ctrl_pot_pin);
@@ -71,7 +76,7 @@ fn main() -> ! {
         let max_adc = adc.max_sample() as u32;
 
         // output measured voltage to serial
-        write!(s, "ctrl: {ctrl_pot}\npos: {pos_pot}").ok();
+        write!(s, "ctrl/pos: {ctrl_pot}/{pos_pot}").ok();
 
         // set PWM according to ADC
         let max_pwm = pwm.get_max_duty() as u32;
