@@ -17,4 +17,4 @@ fp-info-cache
 \#auto_saved_files\#
 Board/Gerbers
 *~*
-
+*/target/*
