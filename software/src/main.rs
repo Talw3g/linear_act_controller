@@ -18,11 +18,17 @@ fn panic(_pi: &PanicInfo) -> ! {
     // reboot in bootloader mode
     cortex_m::peripheral::SCB::sys_reset();
 }
-const AVG_RANGE: usize = 100; // number of values for avg
-const POS_MAX_MV: u16 = 2800; // mv reading when pot at 100%
-const POS_MAX_ERR: u16 = 10; // pos error (%) for full speed
+const AVG_RANGE: usize = 50; // number of values for avg
+const POS_MAX_MV: u16 = 295; // mv reading when actuator fully extended
+const POS_MIN_MV: u16 = 1830; // mv reading when actuator fully retracted
+const CTRL_MIN_MV: u16 = 0; // mv reading when pot at 0%
+const CTRL_MAX_MV: u16 = 2834; // mv reading when pot at 100%
+const POS_MAX_ERR: f32 = 5.0; // pos error (%) for full speed
 const POS_MIN_ERR: f32 = 0.5; // authorized pos error (%)
-const I_LIMIT_MV: u16 = 1500; // current limit (500mV = 1A)
+const I_LIMIT: u16 = 2; // current limit (A)
+const I_LIMIT_MV: u16 = I_LIMIT * 500; // current limit in mV (500mV = 1A)
+const MIN_SPEED: f32 = 100.0;
+const MAX_SPEED: f32 = 480.0;
 
 #[entry]
 fn main() -> ! {
@@ -82,12 +88,14 @@ fn main() -> ! {
     // -- QUEUES --
     let mut ctrl_pot_queue: Queue<u16, AVG_RANGE> = Queue::new();
     let mut pos_pot_queue: Queue<u16, AVG_RANGE> = Queue::new();
+    let mut visen_queue: Queue<u16, AVG_RANGE> = Queue::new();
 
     let mut i: u16 = 0;
     loop {
         i += 1;
         // measure voltages on ADC
         let visen: u16 = adc.read_abs_mv(&mut visen_pin);
+        visen_queue.enqueue(visen).ok();
         let ctrl_pot: u16 = adc.read_abs_mv(&mut ctrl_pot_pin);
         ctrl_pot_queue.enqueue(ctrl_pot).ok();
         let pos_pot: u16 = adc.read_abs_mv(&mut pos_pot_pin);
@@ -95,16 +103,18 @@ fn main() -> ! {
 
         // warn user if halfbridge fault:
         if Ok(true) == hb_nfault.is_low() {
-            if i.is_multiple_of(500) {
+            writeln!(s, "Halfbridge fault detected").ok();
+            if i.is_multiple_of(50) {
                 led.toggle().ok();
                 i = 0;
             }
             continue;
         }
         // software current limitation:
-        if visen > I_LIMIT_MV {
+        if mean(&visen_queue) > I_LIMIT_MV {
+            writeln!(s, "Triggered current limit: {visen}").ok();
             hb_enbl_pwm.set_duty(0);
-            if i.is_multiple_of(2_000) {
+            if i.is_multiple_of(150) {
                 led.toggle().ok();
                 i = 0;
             }
@@ -116,12 +126,14 @@ fn main() -> ! {
             continue;
         }
 
-        let ctrl = mean(&ctrl_pot_queue);
-        let pos = mean(&pos_pot_queue);
-        let pos_err: f32 = (pos as f32 - ctrl as f32) / POS_MAX_MV as f32 * 100.0;
-        let speed: u16 = ((pos_err.abs() as u16 * 100) / POS_MAX_ERR).clamp(20, 100);
-        // writeln!(s, "pos_err: {pos_err}").ok();
-        // writeln!(s, "speed: {speed}").ok();
+        let _ctrl = mean(&ctrl_pot_queue);
+        let _pos = mean(&pos_pot_queue);
+        let ctrl: f32 =
+            (_ctrl as f32 - CTRL_MIN_MV as f32) / (CTRL_MAX_MV as f32 - CTRL_MIN_MV as f32) * 100.0;
+        let pos: f32 =
+            (_pos as f32 - POS_MIN_MV as f32) / (POS_MAX_MV as f32 - POS_MIN_MV as f32) * 100.0;
+        let pos_err = pos - ctrl;
+        let speed = ((pos_err.abs() * MAX_SPEED / POS_MAX_ERR).clamp(MIN_SPEED, MAX_SPEED)) as u16;
 
         if pos_err.abs() <= POS_MIN_ERR {
             // target reached
@@ -145,7 +157,7 @@ fn main() -> ! {
             i = 0;
         }
         // wait some time
-        cortex_m::asm::delay(100_000);
+        cortex_m::asm::delay(10_000);
     }
 }
 
